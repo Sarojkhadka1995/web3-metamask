@@ -1,0 +1,25 @@
+@import "~bootstrap/scss/bootstrap";
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.btn {
+  border: none;
+  background-color: #b02a71;
+}
+.btn:hover {
+  background-color: #d238a3;
+}
+
+.btn:disabled {
+  background-color: #7a184c;
+}
+
+html,
+body {
+  background: linear-gradient(0.25turn, #112650, #000000, #08053c);
+}

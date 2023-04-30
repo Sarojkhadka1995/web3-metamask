@@ -1,0 +1,25 @@
+.card {
+  background-color: white; /* Or any other color you prefer */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  max-width: 400px;
+}
+
+.card_title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form_label {
+  margin-bottom: 5px;
+}
+
+.form_control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}

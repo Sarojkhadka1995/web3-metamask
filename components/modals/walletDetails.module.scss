@@ -1,0 +1,30 @@
+.AccountTable {
+  max-height: 250px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.AccountTable_table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+
+.AccountTable_table th,
+.AccountTable__table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.AccountTable_table th {
+  font-weight: bold;
+}
+
+.AccountTable__table td:last-child {
+  text-align: right;
+}
+
+.ErrorMessage {
+  color: red;
+}
