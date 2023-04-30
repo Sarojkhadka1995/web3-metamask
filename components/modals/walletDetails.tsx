@@ -54,10 +54,11 @@ const WalletDetails: FC<WalletDetails> = ({
   toggleWallet,
   isActive,
 }) => {
-  const { useProvider, useAccounts } = hooks;
+  const { useProvider, useAccounts, useChainId } = hooks;
 
   const accounts = useAccounts();
   const provider = useProvider();
+  const chainId = useChainId();
 
   const balances = useBalances(provider, accounts);
 
@@ -82,6 +83,7 @@ const WalletDetails: FC<WalletDetails> = ({
             <thead>
               <tr>
                 <th>Account</th>
+                <th>Chain Id</th>
                 <th>Balance</th>
               </tr>
             </thead>
@@ -94,6 +96,7 @@ const WalletDetails: FC<WalletDetails> = ({
                 accounts.map((account, i) => (
                   <tr key={account}>
                     <td>{account}</td>
+                    <td>{chainId || "-"}</td>
                     <td>
                       {balances?.[i] ? `${formatEther(balances[i])}` : "-"}
                     </td>
