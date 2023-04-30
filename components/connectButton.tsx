@@ -40,7 +40,6 @@ const ConnectButton: FC<ConnectButton> = ({
 
   return (
     <div>
-      <div />
       {isActive ? (
         error ? (
           <Button onClick={connect}>Try again?</Button>

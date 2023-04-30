@@ -15,8 +15,9 @@ const Home = () => {
   const { useIsActive } = hooks;
 
   const isActive = useIsActive();
-  const [isClient, setIsClient] = useState<boolean>(false);
 
+  //States
+  const [isClient, setIsClient] = useState<boolean>(false);
   const [showWallet, setShowWallet] = useState<boolean>(false);
 
   useEffect(() => {

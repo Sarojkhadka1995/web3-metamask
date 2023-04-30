@@ -19,6 +19,7 @@ const useBalances = (
   provider?: ReturnType<Web3ReactHooks["useProvider"]>,
   accounts?: string[]
 ): BigNumber[] | undefined => {
+  //State
   const [balances, setBalances] = useState<BigNumber[] | undefined>();
 
   useEffect(() => {

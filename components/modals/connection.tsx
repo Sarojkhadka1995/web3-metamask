@@ -12,9 +12,9 @@ import ConnectButton from "../connectButton";
 const ConnectionModal = () => {
   const { useIsActivating, useIsActive } = hooks;
   const isActivating = useIsActivating();
-
   const isActive = useIsActive();
 
+  //State
   const [error, setError] = useState<Error | undefined>(undefined);
   return (
     <Modal show={true} backdrop="static" centered>
